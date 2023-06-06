@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	<ProjectReference Include="..\External.ThirdParty.Services\External.ThirdParty.Services.csproj" />
+    <ProjectReference Include="..\TranslationManagement.Data\TranslationManagement.Data.csproj" />
+    <ProjectReference Include="..\TranslationManagement.Domain\TranslationManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,5 @@
+<h2>Update Translator Status</h2>
+<p>Translator: {{ translator.name }}</p>
+<p>Current Status: {{ translator.status }}</p>
+<p>New Status: <input type="text" [(ngModel)]="newStatus" name="newStatus"></p>
+<button (click)="updateTranslatorStatus()">Update Status</button>

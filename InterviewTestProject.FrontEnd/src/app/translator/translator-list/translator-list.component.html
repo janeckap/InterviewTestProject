@@ -1,0 +1,22 @@
+<h2>Translators</h2>
+
+<a routerLink="/translators/create">Add New Translator</a>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Hourly Rate</th>
+    <th>Status</th>
+    <th>Credit Card Number</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let translator of translators">
+    <td>{{ translator.name }}</td>
+    <td>{{ translator.hourlyRate }}</td>
+    <td>{{ translator.status }}</td>
+    <td>{{ translator.creditCardNumber }}</td>
+    <td>
+      <a [routerLink]="['/translators/update-status', translator.id]">Edit Status</a>
+    </td>
+  </tr>
+</table>
